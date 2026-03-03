@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Image from 'next/image'
-import Neobop from "@/public/neobop.png"
+import Profile from "@/public/profile_pic.png"
 import { motion } from "framer-motion"
 import Link from "next/link" 
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
@@ -22,7 +22,7 @@ export default function Intro() {
                         duration: 0.2,
                     }}
                 >
-                    <Image src={Neobop} alt="Neobop"
+                    <Image src={Profile} alt="Neobop"
                     width={400}
                     height={400}
                     quality={95}
@@ -47,7 +47,7 @@ export default function Intro() {
             </div>
         </div>
 
-        <motion.p className='mb-10 mt-4 px-4 text-2xl font-medium
+        <motion.h1 className='mb-10 mt-4 px-4 text-2xl font-medium
         leading-[-1.5]! sm:text-4xl'
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -67,7 +67,7 @@ export default function Intro() {
                 
 
             </span> 
-        </motion.p>
+        </motion.h1>
 
         <motion.div className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4
         text-lg font-medium'
